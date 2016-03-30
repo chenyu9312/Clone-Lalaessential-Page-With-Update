@@ -1,0 +1,326 @@
+body
+			{
+				background-color:beige;
+				background-image:url("https://marciepettitta2.files.wordpress.com/2011/11/backgroun-effect.jpg");
+				background-attachment:fixed;
+				font-family:verdena;
+				font-size:100%;
+				color:brown;
+			}
+			#headerImage
+			{
+				width:200px;
+				height:100px;
+				left:80%;
+				position:absolute;
+			}
+			.holder
+			{
+				width:1120px;
+				height:1130px;
+				background-color: #FFE0C2;
+				border:1px solid lightgrey;
+				position:absolute;
+				
+				margin:auto;
+				top:0px;
+				left:0px;
+				right:0px;
+			}
+			#preBox
+			{
+				width:1000px;
+				height:1080px;
+				left:50px;
+				position:absolute;
+				background-color:beige;
+				border-right:10px solid tan;
+				border-left:10px solid tan;
+				top:2.6%;
+			}
+			#s1
+			{
+				top:0%; /*it's s right at the top so it's 0%*/
+				height:100px;
+				background-color:#FFFFF0;
+				text-align:center;
+				position:absolute;
+				width:1000px;
+			}
+			#s2
+			{
+				z-index:9999;
+				top:0%; /*100/1080*/
+				background-color:chocolate;
+				height:30px;
+				position:absolute;
+				width:1019px;
+				left:4.5%;
+			}
+			/*top links*/
+			ul.top
+			{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+				width:102%;
+				position:absolute;
+			}
+			a.top
+			{
+				float:left;
+				display:block;
+				width:118.4px;
+				height: 24px;
+				padding:0.15em 0.3em;
+				text-decoration:none;
+				background-color:chocolate;
+				color:	mistyrose;
+				text-align:center;
+				font-size:0.90em;
+				font-family:Tahoma;
+				font-weight:light;
+			}
+			a.top:hover
+			{
+				background-color:mistyrose;
+				color:chocolate;
+				border:1px solid chocolate;
+				font-weight:light;
+			}
+			li.top
+			{
+				display:inline;
+			}
+			/*top links end*/
+			
+			h1
+			{
+				font-size:3em;
+				color:chocolate;
+				font-family:Verdena;
+				padding-left:10px;
+				float:left;
+				margin:0px;
+				top:28%;
+				left:1%;
+				position:absolute;
+				text-align:center;
+			}
+			#textHolder1
+			{
+				width:960px;
+				height:125px;
+				left:2%;
+				top:12%;
+				font-size:1em;
+				color:brown;
+				position:absolute;
+				background-color:transparent;
+				line-height:140%;
+			}
+			#textHolder2
+			{
+				width: 960px;
+				height:700px;
+				left:2%;
+				top:22%;
+				font-size:1em;
+				color:brown;
+				position:absolute;
+				background-color:transparent;
+				line-height:140%;
+			}	
+			#linkDiv2,#linkDiv3
+			{
+				width:950px;
+				height:150px;
+				position:absolute;
+				left:0px;
+				background-color:transparent;
+			}
+			#linkContainer
+			{
+				width:120px;
+				height:40px;
+				position:absolute;
+				left:44%;
+				background-color:transparent;
+				top:96%;
+			}
+			#linkDiv1
+			{
+				top:85%;
+			}
+			#linkDiv2
+			{
+				top:26%;
+			}
+			#linkDiv3
+			{
+				top:85%;
+			}
+			#mango,#almondOil,#avoc,#grapeSeed,#coco,#shea
+			{
+				border:1px solid chocolate;
+				width:150px;
+				height:150px;
+				position:absolute;
+				top:10%;
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#mango:hover,#almondOil:hover,#avoc:hover,#grapeSeed:hover,#coco:hover,#shea:hover
+			{
+				-webkit-filter: sepia(1);
+  				filter: sepia(1);
+  				cursor:pointer;
+  			}		
+			#fbook,#twit,#ingram
+			{
+				width:40px;
+				height:40px;
+				position:absolute;
+				/*adding grey filter on hover*/
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#fbook:hover,#twit:hover,#ingram:hover
+			{
+				-webkit-filter: grayscale(1);
+				-moz-filter: grayscale(1);
+				-ms-filter: grayscale(1);
+ 				 filter: grayscale(1);
+ 			}
+			#fbook
+			{
+				left:0%;
+			}
+			#twit
+			{
+				left:33%;
+			}
+			#ingram
+			{
+				left:66%;
+			}
+			#mango,#almondOil,#avoc,#grapeSeed,#coco,#shea
+			{
+				transition: border-bottom 0.2s;
+				-webkit-transition: border-bottom 0.2s;
+				-moz-transition: border-bottom 0.2s;
+				-o-transition: border-bottom 0.2s;
+			}
+			#mango:hover,#almondOil:hover,#avoc:hover,#grapeSeed:hover,#coco:hover,#shea:hover
+			{
+				border-bottom:4px solid indianred;
+			}
+			#mango
+			{
+				left:4.1%;
+			}
+			#almondOil
+			{
+				left:19.4%;
+			}
+			#avoc
+			{
+				left:34.7%;
+			}
+			#grapeSeed
+			{
+				left:50%;
+			}
+			#coco
+			{
+				left:65.3%;
+			}
+			#shea
+			{
+				left:80.6%;
+			}
+			a
+			{
+				text-dedoration:none;
+			}
+			#insideP
+			{
+				position:absolute;
+				top:59%;
+			}
+			#header2
+			{
+				position:absolute;
+				top:52%;
+			}
+			#contact
+			{
+				position:absolute;
+				top:80%;
+				left:45%;
+			}
+			/*the account and cart*/
+			#personale1,#personale2
+			{
+				position:absolute;
+				left:70%;
+				text-decoration:none;
+				
+				-webkit-transition: border-bottom 0.2s, color 0.2s, cursor 0.2s;
+			}
+			#personale1
+			{
+				top:25%;
+			}
+			#personale2
+			{
+				top:55%;
+			}
+			#personale1:hover,#personale2:hover
+			{
+				border-bottom:2px solid maroon;
+				color:red;
+				cursor:pointer;
+			}
+			#personale1:active,#personale2:active
+			{
+				color:maroon;
+			}
+			#copyright
+			{
+				position:absolute;
+				top:100%;
+				font-weight:bold;
+				left:35%;
+			}
+			#freeShipping
+			{
+				float:right;
+				color:brown;
+				position:absolute;
+				left:55%
+				width:200px;
+				font-size:1em;
+				-webkit-animation: discountAnimation 8s linear infinite;
+				animation: discountAnimation 8s linear infinite;
+			}
+			@keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px; left:615px;}
+				25% {color:red; top:20px; left:615px;}
+				50% {color:indianred; top:40px; left:615px;}
+				75% {color:brown; top:60px; left:615px;}
+				100% {color:maroon; top:64px; left:615px;}
+			}
+			@-webkit-keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px; left:615px;}
+				25% {color:red; top:20px; left:615px;}
+				50% {color:indianred; top:40px; left:615px;}
+				75% {color:brown; top:60px; left:615px;}
+				100% {color:maroon; top:64px; left:615px;}
+			}

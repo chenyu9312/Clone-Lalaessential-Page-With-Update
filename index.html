@@ -1,0 +1,211 @@
+<!--
+Original website developed for Lala Skin Essentials 2015. All rights reserved. 
+
+Web developer: Meem Siddique
+Original images created by: Ravish Rawat
+Some images are borrowed from the internet. If you have any questions/concerns please contact:
+lalaskinessentials@gmail.com. Thank you.-->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<title> lala skin care essentials </title>
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+		<meta name="keywords" content="natural skin care, organic skin care, lala skin essentials">
+		<meta name="description" content="all natural skin care solutions for skin">
+		<meta name="author" content="Lala Skin Essentials">
+		<meta http-equiv="refresh" content="30">
+		<link rel="stylesheet" href="homepage.css">
+		<script src="homepage.js"></script>
+	</head>
+	
+	<body onload="myFunction()">
+	
+		<?php
+		// define variables and set to empty values
+		$emailErr = "";
+		$email = "";
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{
+   
+   			if (empty($_POST["email"])) 
+   			{
+     			$emailErr = "Email is required";
+   			} 
+   			else 
+   			{
+     			$email = test_input($_POST["email"]);
+   			}
+
+
+		}
+
+		function test_input($data) 
+		{
+   			$data = trim($data);
+   			$data = stripslashes($data);
+   			$data = htmlspecialchars($data);
+   			return $data;
+		}
+	?>
+		<div class = "holder">
+			<div id="container">
+			
+				<div id="s1">
+					<img id="lalaLogo" src="lalaLogo.png">
+					
+					<b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+					<img src="natural-logo.png" id="naturalLogo"/>			
+				</div>
+				
+				<div id="s2">
+					<!--main links at the top-->
+					<ul class="top">
+						<li class="top"><a class="top" href="About.html"> About</a></li>
+                                                <li class="top"><a class="top" href="Shop-Products.html"> Shop Products</a></li>
+						<li class="top"><a class="top" href="Why-Use-Natural.html"> Why Use Organic?</a></li>
+						<li class="top"><a class="top" href="Ingredients.html"> Ingredients</a></li>
+						<li class="top"><a class="top" href="Shipping.html"> Shipping</a></li>
+						<li class="top"><a class="top" href="Contact.html"> Contact</a></li>
+						<li class="top"><a class="top" href="#"> Testimonials</a></li>
+					</ul>
+				</div>
+				
+				<div id="s3">
+					<!-----slideshow starts---->
+							<div id="divImageContainer1">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="one" src="newnew2.jpg">
+								</a>
+							</div>
+						
+							<div id="divImageContainer2">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="two" src= "withmango.JPG">
+								</a>
+							</div>
+
+							<div id="divImageContainer3">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="three" src="newTrial11.jpg">
+								</a>
+							</div>
+
+							<div id="divImageContainer4">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="four" src="new3.jpg">
+								</a>
+							</div>
+
+							<div id="divImageContainer5">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="five" src="new3.jpg">
+								</a>
+							</div>
+							
+							<div id="divImageContainer6">
+								<a href="Shop-Products.html" target="_blank">
+									<img href ="lalaShopProducts.html" target="_blank" id="six" src="newnew1.jpg">
+								</a>
+							</div>
+							
+							<div id="divImageContainer7">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="seven" src="lavenderCollage.JPEG"><!--this is the lavender-->
+								</a>
+							</div>
+							
+							<div id="divImageContainer8">
+								<a href="Shop-Products.html" target="_blank">
+									<img id="eight" src="bannerDone1.JPG"><!--this is the lavender-->
+								</a>
+							</div>
+							
+							<!--gallery buttons-->
+							<button id="change1" onclick="changeD1()"></button>
+							<button id="change2" onclick="changeD2()"></button>
+							<button id="change3" onclick="changeD3()"></button>
+							<button id="change4" onclick="changeD4()"></button>
+							<button id="change5" onclick="changeD5()"></button>
+							<button id="change6" onclick="changeD6()"></button>
+							<button id="change7" onclick="changeD7()"></button>
+							<button id="change8" onclick="changeD8()"></button>
+							<button id="change9" onclick="changeD9()"></button>
+							<button id="change10" onclick="changeD10()"></button>
+							<!--gallery buttons end-->
+						<!--slideshow ends-->
+				</div>
+				
+				<!--product galleries-->
+				
+				<!--These pictures are taken from the internet.
+				If these images belong to you and you want them removed,
+				please contact us at lalaskinessentials@gmail.com and we will
+				remove them. Thank you.-->
+				
+				<div id="s4">
+					<div id="d1">Body
+						<a href="Shop-Products.html">
+							<img src="http://dermabeautyspa.com/wp-content/uploads/2014/09/46c605c8-f444-42bd-825d-f4aceefcd840-0-.jpg" id="img1"/>
+						</a>
+					</div>
+					<div id="d2">Face
+						<a href="face.html">
+							<img src="olive_oil_beauty.jpg" id="img2"/>
+						</a>
+					</div>
+					<div id="d3">Hair
+						<a href="hair.html">
+							<img src="curls.jpg" id="img3"/>
+						</a>
+					</div>
+					<div id="d4">Lips
+						<a href="#">	
+							<img src="https://c2.staticflickr.com/6/5034/5910653856_d2ca1da11f_z.jpg" id="img4"/>
+						</a>
+					</div>
+					<div id="d5">Gift Sets
+						<a href="gift-sets.html">
+							<img src="gift1.JPG" id="img5"/>
+						</a>
+					</div>
+					
+					<div id="d6">Body Oils
+						<a href="body.html">
+							<img src="Argan-Oil-Beauty-Benefits.jpg" id="img6"/>
+						</a>
+					</div>
+				</div>
+				
+				<div id="s5">
+					<h2 id="checkUs">Stay Connected With Us! </h2>
+				</div>
+				
+				<!--social media links at the very bottom-->
+				<!--These pictures are taken from the internet.
+				If these images belong to you and you want them removed,
+				please contact us at lalaskinessentials@gmail.com and we will
+				remove them. Thank you.-->
+				
+				<div id="linkContainer">
+					<a href="https://www.facebook.com/lalaskinessentials" target="_blank"><img id="fbook" src="http://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_(square).png"/></a>
+					<a href="https://twitter.com/LalaSkinEssents" target="_blank"><img id="twit" src="https://g.twimg.com/Twitter_logo_blue.png"/></a>
+					<a href="http://instagram.com/lalaskinessentials/" target="_blank"><img id="ingram" src="Instagram-icon.png"/></a>
+				</div>
+				
+				<div id="signUp"> 
+				<form action="subscribe.php" method="post" name="formname">
+					Sign up for emails to receive great discounts and promotions : <input name="email" type="email" placeholder="Your email" required></input>
+					<input id="signMe" type="submit" value="Sign Up" onclick="checkEmail()" onsubmit="return validateForm()">
+				</form>
+				</div>
+				
+				<p id="copyright">&#169 Lala Skin Essentials 2015. All rights reserved. </p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,381 @@
+			body
+			{
+				background-color:beige;
+				background-image:url("https://marciepettitta2.files.wordpress.com/2011/11/backgroun-effect.jpg");
+				background-attachment:fixed;
+				font-family:verdena;
+			}
+			div
+			{
+				line-height:200%;
+			}
+			#headerImage
+			{
+				width:200px;
+				height:100px;
+				left:80%;
+				position:absolute;
+				top:0%;
+			}
+			.holder
+			{
+				width:1120px;
+				height:8150px;
+				background-color: #FFE0C2;
+				border:1px solid lightgrey;
+				position:absolute;
+				padding:0x;
+				margin:auto;
+				top:0px;
+				left:0px;
+				right:0px;
+			}
+			#preBox
+			{
+				width:1000px;
+				height:8000px;
+				left:50px;
+				position:absolute;
+				background-color:beige;
+				border-right:10px solid tan;
+				border-left:10px solid tan;
+				top:0.37%;
+			}
+			#s1
+			{
+				top:0%; /*it's s right at the top so it's 0%*/
+				height:100px;
+				background-color:#FFFFF0;
+				text-align:center;
+				position:absolute;
+				width:1000px;
+			}
+			/*div that contains the top navigation links*/
+			#s2
+			{
+				z-index:9999;
+				top:0%; /*100/1080*/
+				background-color:chocolate;
+				height:30px;
+				position:absolute;
+				width:1019px;
+				left:4.5%;
+			}
+			#imageHolder1,#imageHolder2,#imageHolder3,#imageHolder4,#imageHolder5,#imageHolder6,#imageHolder7,
+			#imageHolder8,#imageHolder9,#imageHolder10,#imageHolder11,#imageHolder12,#imageHolder13,
+			#imageHolder14,#imageHolder15,#imageHolder16,#imageHolder17,#imageHolder18,#imageHolder19
+			{
+				width: 900px;
+				height:380px;
+				left:5%;
+				position:absolute;
+				background-color:#EDE1D1;
+				
+				transition: border-left 0.2s;
+			}
+			
+			#imageHolder1, #imageHolder2, #preBox #imageHolder3, #preBox #imageHolder4,
+			#preBox #imageHolder5, #preBox #imageHolder6, #preBox #imageHolder7, #preBox #imageHolder8,
+			#preBox #imageHolder9, #preBox #imageHolder10, #preBox #imageHolder11, #preBox #imageHolder12,
+			#preBox #imageHolder13, #preBox #imageHolder14, #preBox #imageHolder15, #preBox #imageHolder16,
+			#preBox #imageHolder17, #preBox #imageHolder18, #preBox #imageHolder19
+			{
+				transition: border-left 0.2s, background-color 0.2s;
+			}
+			
+			#preBox #imageHolder1:hover, #preBox #imageHolder2:hover, #preBox #imageHolder3:hover,
+			#preBox #imageHolder4:hover, #preBox #imageHolder5:hover, #preBox #imageHolder6:hover, 
+			#preBox #imageHolder7:hover, #preBox #imageHolder8:hover, #preBox #imageHolder9:hover,
+			#preBox #imageHolder10:hover, #preBox #imageHolder11:hover, #preBox #imageHolder12:hover,
+			#preBox #imageHolder13:hover, #preBox #imageHolder14:hover, #preBox #imageHolder15:hover,
+			#preBox #imageHolder16:hover, #preBox #imageHolder17:hover, #preBox #imageHolder18:hover,
+			#preBox #imageHolder19:hover
+			{
+				border-left:5px solid peru;
+				background-color:#F6F0E8;
+			}
+			#imageHolder1
+			{
+				top:1.5%; /* 120/8000 */
+			}
+			#imageHolder2
+			{
+				top:6.5%; /* 120+20+380 = 520 */
+			}
+			#imageHolder3
+			{
+				top:11.5%; /* 120+(2)20+(2)380 = 920 */
+			}
+			#imageHolder4
+			{
+				top:16.5%; /* 120+(3)20+(3)380 = 1320 */
+			}
+			#imageHolder5
+			{
+				top:21.5%; /* 120+(4)20+(4)380 = 1720 */
+			}
+			#imageHolder6
+			{
+				top:26.5%; /*2120*/ /*it's increasing by 400 each time*/
+			}
+			#imageHolder7
+			{
+				top:31.5%; /*2520*/
+			}
+			#imageHolder8
+			{
+				top:36.5%; /*2920*/
+			}
+			#imageHolder9
+			{
+				top:41.5%; /*3320*/
+			}
+			#imageHolder10
+			{
+				top:46.5%; /*3720*/
+			}
+			#imageHolder11
+			{
+				top:51.5%; /*4120*/
+			}
+			#imageHolder12
+			{
+				top:56.5%; /*4520*/
+			}
+			#imageHolder13
+			{
+				top:61.5%; /*4920*/
+			}
+			#imageHolder14
+			{
+				top:66.5%; /*5320*/
+			}
+			#imageHolder15
+			{
+				top:71.5%; /*5720*/
+			}
+			#imageHolder16
+			{
+				top:76.5%; /*6120*/
+			}
+			#imageHolder17
+			{
+				top:81.5%; /*6520*/
+			}
+			#imageHolder18
+			{
+				top:86.5%; /*6920*/
+			}
+			#imageHolder19
+			{
+				top:91.5%; /*7320*/
+			}
+			.ingredientImage
+			{
+				width:300px;
+				height:290px;
+				position:absolute;
+				left:5%;
+				top:10%;
+				
+				transition: border 0.2s;
+			}
+			.ingredientImage:hover
+			{
+				border:1px solid #993300;
+			}
+			.d1
+			{
+				width:480px;
+				padding-left:10px;
+				padding-right:10px;
+				padding-top:10px;
+				height:280px;
+				position:absolute;
+				left:40%;
+				top:10%;
+				font-size:16px;
+				font-family:verdena;
+				background-color:Cornsilk;
+				color:chocolate;
+			}
+			h1
+			{
+				font-size:3em;
+				color:chocolate;
+				font-family:Verdena;
+				padding-left:10px;
+				float:left;
+				margin:0px;
+				top:45%;
+				position:absolute;
+				text-align:center;
+			}
+			h2
+			{
+				text-align:center;
+				color:indianred;
+				font-size:24px;
+				position:absolute;
+				margin-top:5px;
+				left:5%;
+			}
+			a.other
+			{
+				top:90%;
+				margin-bottom:4px;
+				margin-right:4px;
+				margin-top:5px;
+				margin-left:110px;
+				position:absolute;
+				text-decoration:none;
+				display:block;
+				background-color:red;
+				color:white;
+				width:10em;
+				text-align:center;
+			}
+			a.other:hover
+			{
+				background-color:white;
+				color:red;
+			}
+			/*top links*/
+			ul.top
+			{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+				width:102%;
+				position:absolute;
+			}
+			a.top
+			{
+				float:left;
+				display:block;
+				width:118.4px;
+				height: 24px;
+				padding:0.15em 0.3em;
+				text-decoration:none;
+				background-color:chocolate;
+				color:	mistyrose;
+				text-align:center;
+				font-size:0.90em;
+				font-family:Tahoma;
+				font-weight:light;
+			}
+			a.top:hover
+			{
+				background-color:mistyrose;
+				color:chocolate;
+				border:1px solid chocolate;
+				font-weight:light;
+			}
+			li.top
+			{
+				display:inline;
+			}	
+			/*div that contains social media links container*/
+			#linkContainer
+			{
+				width:120px;
+				height:40px;
+				position:absolute;
+				left:44%;
+				background-color:transparent;
+				top:97%;
+			}
+			/*styles for the three social media links*/
+			#fbook,#twit,#ingram
+			{
+				width:40px;
+				height:40px;
+				position:absolute;
+				/*adding grey filter on hover*/
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#fbook:hover,#twit:hover,#ingram:hover
+			{
+				-webkit-filter: grayscale(1);
+				-moz-filter: grayscale(1);
+				-ms-filter: grayscale(1);
+ 				 filter: grayscale(1);
+ 			}
+			#fbook
+			{
+				left:0%;
+			}
+			#twit
+			{
+				left:33%;
+			}
+			#ingram
+			{
+				left:66%;
+			}
+			/*the account and cart*/
+			#personale1,#personale2
+			{
+				position:absolute;
+				left:70%;
+				text-decoration:none;
+				
+				-webkit-transition: border-bottom 0.2s, color 0.2s, cursor 0.2s;
+			}
+			#personale1
+			{
+				top:25%;
+			}
+			#personale2
+			{
+				top:55%;
+			}
+			#personale1:hover,#personale2:hover
+			{
+				border-bottom:2px solid maroon;
+				color:red;
+				cursor:pointer;
+			}
+			#personale1:active,#personale2:active
+			{
+				color:maroon;
+			}
+			#copyright
+			{
+				position:absolute;
+				top:97%;
+				font-weight:bold;
+				left:35%;
+				color:brown;
+				z-index:99999;
+			}
+			#freeShipping
+			{
+				float:right;
+				color:brown;
+				position:absolute;
+				left:55%;
+				width:350px;
+				font-size:1em;
+				-webkit-animation: discountAnimation 8s ease-out infinite;
+				animation: discountAnimation 8s ease-out infinite;
+			}
+			@keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px; left:650px;}
+				25% {color:red; top:20px; left:650px;}
+				50% {color:indianred; top:40px; left:650px;}
+				75% {color:brown; top:60px; left:650px;}
+				100% {color:maroon; top:64px; left:650px;}
+			}
+			@-webkit-keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px; left:650px;}
+				25% {color:red; top:20px; left:650px;}
+				50% {color:indianred; top:40px; left:650px;}
+				75% {color:brown; top:60px; left:650px;}
+				100% {color:maroon; top:64px; left:650px;}
+			}

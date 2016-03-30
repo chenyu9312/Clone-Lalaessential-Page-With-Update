@@ -1,0 +1,424 @@
+/*this is the style for the homepage*/
+
+			body
+			{
+				background-color:beige;
+				background-image:url("https://marciepettitta2.files.wordpress.com/2011/11/backgroun-effect.jpg");
+				background-attachment:scroll;
+			}
+			#headerImage
+			{
+				width:200px;
+				height:100px;
+				left:80%;
+				position:absolute;
+			}
+			#lalaLogo
+			{
+				height:100px;
+				width:420px;
+				left:0px;
+				position:absolute;
+				z-index:999999;
+			}
+			.holder
+			{
+				width:1100px;
+				height:1300px;
+				background-color: #FFE0C2;
+				border:1px solid lightgrey;
+				position:absolute;
+				
+				margin:auto;
+				top:0px;
+				//bottom:0px; /*or else the top sections won't show up unless zoomed out! */
+				left:0px;
+				right:0px;
+			}
+			#container
+			{
+				width:1000px;
+				height:1300px;
+				left:50px;
+				position:absolute;
+				background-color:beige;
+			}
+			
+			/*these are all the main section containers*/
+			
+			#s1,#s2,#s3,#s4,#s5
+			{
+				position:absolute;
+				width:1000px;
+			}
+			#s1
+			{
+				top:0%; /*it's s right at the top so it's 0%*/
+				height:100px;
+				background-color:#FFFFF0;
+				text-align:center;
+			}
+			#s2
+			{
+				top:7.69%; /*[(100/1300)*100%]=7.69%*/
+				background-color:chocolate;
+				height:50px;
+			}
+			#s3
+			{
+				top:12%; /* [(100+50)/1300]*100%=11.538% */
+				height:280px;
+				border-top:10px solid beige;
+				border-bottom:10px solid beige;
+				background-color:#FFFFF0;
+			}
+			#s4
+			{
+				top:36%; /* [(100+50+300+600+20)/1300]*100%=34.6% */
+				background-color:#FFFFF0;
+				border-bottom:10px solid beige;
+				height:600px;
+			}
+			#s5
+			{
+				height:180px;
+				background-color:#FFFFF0;
+				top: 84% /* [(100+50+300+600+20+10)/1300]*100%=833% */
+			}
+			/*these are the image containers*/
+			#d1,#d2,#d3,#d4,#d5,#d6
+			{
+				width:320px;
+				height:275px;
+				text-align:center;
+				font-variant:small-caps;
+				position:absolute;
+				font-weight:bold;
+				font-size:1.9em;
+				color:#C26666;
+				font-family:Tahoma;
+				
+				/*adding hover transitions*/
+				transition: background-color 0.5s;
+				-webkit-transition: background-color 0.5s;
+				-moz-transition: background-color 0.5s;
+				-o-transition: background-color 0.5s;
+			}
+			#d6
+			{
+				height:300px;
+			}
+			#d1,#d2,#d3
+			{
+				top:4.17%; /* (25/600)*100%=4.16667% */
+				text-align:center;
+			}
+			#d4,#d5,#d6
+			{
+				top:50%;
+				text-align:center;
+			}
+			#d1,#d4
+			{
+				left:2%; /* (20/1000)*100% = 2% */
+			}
+			#d2, #d5
+			{
+				left:34%; /* [(20+320)/1000]*100% = 34% */
+			}
+			#d3, #d6
+			{
+				left:66%; /* [(20+320+320)/1000]*100% = 66% */
+			}
+			/*hover effects for all image containers*/
+			#d1:hover,#d2:hover,#d3:hover,#d4:hover,#d5:hover,#d6:hover
+			{
+				background-color:#FFE0E0;
+			}
+			/*these are the images that are inside s4 of the div containers*/
+			#img1,#img2,#img3,#img4,#img5,#img6
+			{
+				width:268px; /*left and right sides have a border of 1px */
+				height: 218px; /*top and bottom have a border of 1px */
+				border:1px solid chocolate;
+				position:absolute;
+				left:7.8125%;
+				top:11.36%;
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover,#img6:hover
+			{
+				-webkit-filter: sepia(1);
+  				filter: sepia(1);
+  				cursor:pointer;
+  			}	
+			/*top links*/
+			ul.top
+			{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+				width:100%;
+				position:relative;
+			}
+			a.top
+			{
+				float:left;
+				display:block;
+				width:119px;
+				height: 41px;
+				padding:0.2em 0.6em;
+				text-decoration:none;
+				background-color:chocolate;
+				color:	mistyrose;
+				text-align:center;
+				font-size:1.1em;
+				font-family:Tahoma;
+				font-weight:light;
+			}
+			a.top:hover
+			{
+				background-color:mistyrose;
+				color:chocolate;
+				border:1px solid chocolate;
+				font-weight:light;
+			}
+			li.top
+			{
+				display:inline;
+			}			
+			#divImageContainer1,#divImageContainer2,#divImageContainer3,#divImageContainer4,
+			#divImageContainer5,#divImageContainer6,,#divImageContainer7
+			{
+				top:0%;
+				position:absolute;
+				left:0%;
+				width:1000px;
+				height:280px;
+			}
+			#divImageContainer1
+			{
+				opacity:0;
+			}
+			#one,#two,#three,#four,#five,#six,#seven
+			{
+				width:1000px;
+				height:280px;
+				left:0%;
+				top:0%;
+				position:absolute;
+			}
+			/*end of slideshow components */
+			/*link to social media sites*/
+			#linkContainer
+			{
+				width:120px;
+				height:40px;
+				position:absolute;
+				left:44%;
+				background-color:transparent;
+				top:91%;
+			}	
+			#fbook,#twit,#ingram
+			{
+				width:40px;
+				height:40px;
+				position:absolute;
+				/*adding grey filter on hover*/
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#fbook:hover,#twit:hover,#ingram:hover
+			{
+				-webkit-filter: grayscale(1);
+				-moz-filter: grayscale(1);
+				-ms-filter: grayscale(1);
+ 				 filter: grayscale(1);
+ 			}
+			#fbook
+			{
+				left:0%;
+			}
+			#twit
+			{
+				left:33%;
+			}
+			#ingram
+			{
+				left:66%;
+			}
+			#checkUs
+			{
+				font-size:2em;
+				text-align:center;
+				color:indianred;
+			}
+			/*the account and cart*/
+			#personale1,#personale2
+			{
+				position:absolute;
+				left:70%;
+				text-decoration:none;
+				
+				-webkit-transition: border-bottom 0.2s, color 0.2s, cursor 0.2s;
+			}
+			#personale1
+			{
+				top:25%;
+			}
+			#personale2
+			{
+				top:55%;
+			}
+			#personale1:hover,#personale2:hover
+			{
+				border-bottom:2px solid maroon;
+				color:red;
+				cursor:pointer;
+			}
+			#personale1:active,#personale2:active
+			{
+				color:maroon;
+			}
+			
+			/*button changes*/
+			#change1,#change2,#change3,#change4,#change5,
+			#change6,#change7,#change8,#change9,#change10
+			{
+				width:15px;
+				height:15px;
+				position:absolute;
+				top:92%;
+				background-color:mistyrose;
+				border:1px solid pink;
+				border-radius:100%;
+			}
+			#change1
+			{
+				left:37.8%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change2
+			{
+				left:40.3%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change3
+			{
+				left:42.8%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change4
+			{
+				left:45.3%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change5
+			{
+				left:47.8%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change6
+			{
+				left:50.3%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change7
+			{
+				left:52.8%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change8
+			{
+				left:55.3%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change9
+			{
+				left:57.8%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change10
+			{
+				left:60.3%;
+				-webkit-tranisition: border 0.2s, background-color 0.2s;
+			}
+			#change1:hover,#change2:hover,#change3:hover,#change4:hover,#change5:hover,
+			#change6:hover,#change7:hover,#change8:hover,#change9:hover,#change10:hover
+			{
+				border:1px solid chocolate;
+				background-color:wheat;
+			}
+			#signUp
+			{
+				width:1000px;
+				height:60px;
+				position:absolute;
+				background-color:transparent;
+				top:100%;
+				font-size:1.1em;
+				background-color:#EEDCC3;	
+				font-weight:bold;
+				color:firebrick;
+				text-align:center;
+			}
+			#signMe
+			{
+				background-color:gold;
+				color:red;
+				width:120px;
+				border-radius:30px;
+			}
+			#email
+			{
+				width:160px;
+			}
+			#copyright
+			{
+				display:block;
+				background-color:tranparent;
+				position:absolute;
+				top:105%;
+				font-weight:bold;
+				left:35%;
+				color:brown;
+			}
+			#freeShipping
+			{
+				float:right;
+				color:brown;
+				position:absolute;
+				left:45%;
+				width:400px;
+				font-size:1em;
+				-webkit-animation: discountAnimation 8s linear infinite;
+				animation: discountAnimation 8s linear infinite;
+			}
+			#naturalLogo
+			{
+				left:83%;
+				position:absolute;
+				width:165px;
+				height:102px;
+			}
+			@keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px;}
+				25% {color:red; top:25px;}
+				50% {color:indianred; top:50px;}
+				75% {color:brown; top:75px;}
+				100% {color:maroon; top:100px;}
+			}
+			@-webkit-keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px;}
+				25% {color:red; top:25px;}
+				50% {color:indianred; top:50px;}
+				75% {color:brown; top:75px;}
+				100% {color:maroon; top:100px;}
+			}

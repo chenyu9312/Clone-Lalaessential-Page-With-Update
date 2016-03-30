@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title> lala skin essentials email and comment form</title>
+		<link rel="stylesheet" href="contact.css">
+	</head>
+	
+
+	<body>
+	
+	<?php
+		// define variables and set to empty values
+		$nameErr = $lastnameErr = $emailErr = $genderErr = $phoneErr = "";
+		$name = $lastname=$email = $gender = $comment = $phone= "";
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{
+   			if (empty($_POST["name"])) 
+   			{
+     			$nameErr = "Name is required";
+   			} 
+   			else 
+   			{
+     			$name = test_input($_POST["name"]);
+   			}
+   			if (empty($_POST["lastname"])) 
+   			{
+     			$nameErr = "";
+   			} 
+   			else 
+   			{
+     			$name = test_input($_POST["name"]);
+   			}
+   
+   			if (empty($_POST["email"])) 
+   			{
+     			$emailErr = "Email is required";
+   			} 
+   			else 
+   			{
+     			$email = test_input($_POST["email"]);
+   			}
+     
+   			if (empty($_POST["phone"])) 
+   			{
+     			$phone = "";
+   			} 
+   			else 
+   			{
+    			 $phone = test_input($_POST["phone"]);
+   			}
+
+   			if (empty($_POST["comment"])) 
+   			{
+     			$comment = "";
+   			} 
+   			else 
+   			{
+     			$comment = test_input($_POST["comment"]);
+   			}
+
+		}
+
+		function test_input($data) 
+		{
+   			$data = trim($data);
+   			$data = stripslashes($data);
+   			$data = htmlspecialchars($data);
+   			return $data;
+		}
+	?>
+
+		<div class = "holder">
+		
+			<div id="s2">
+					<!--main links at the top-->
+					<ul class="top">
+						<li class="top"><a class="top" href="Home.html"> Home</a></li>
+						<li class="top"><a class="top" href="About.html"> About</a></li>
+                                                <li class="top"><a class="top" href="Shop-Products.html"> Shop Products</a></li>
+						<li class="top"><a class="top" href="Why-Use-Natural.html"> Why Use Organic?</a></li>
+						<li class="top"><a class="top" href="Ingredients.html"> Ingredients</a></li>
+						<li class="top"><a class="top" href="Shipping.html"> Shipping</a></li>
+						<li class="top"><a class="top" href="Contact.html"> Contact</a></li>
+						<li class="top"><a class="top" href="#"> Testimonials</a></li>
+					</ul>
+			</div>
+			
+			<div id="preBox">
+			
+				<div id="s1"> 
+					<h1>Contact</h1>
+					
+					<b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+					
+				</div>
+				
+				<img alt="backhground-image" id="backImage"/>
+				
+				<!--this div blurs out the left hand of the background-->
+				<div id="topDiv1">
+				</div>
+				
+				<!--this div plus the next will be our actual form-->
+				<div id="header1">Email Us:</div>
+				
+				<div id="container">
+				
+				<!--trying form-->
+				<form action="welcome.php" method="post" name="formname">
+					<br/><br/>
+				
+					<input id="firstName" type="text" name="name" placeholder="First Name" required/>
+					
+					<br/><br/><br/><br/><br/>
+					
+					<input id="lastName" type="text" name="lastname" placeholder="Last Name"/>
+					<br/><br/><br/><br/><br/>
+					
+					<input id="email" type="email" name="email" placeholder="Email" required/>
+					<br/><br/><br/><br/><br/>
+			
+					<input id="phoneNumber" name="phone" type="text" placeholder="Phone Number"/>
+					<br/><br/><br/><br/><br/>
+					<textarea id="commentHere" rows="20" cols="50" name="comment" placeholder="Your comments here" required></textarea>
+					<button id="button1" type="submit" onclick="checkName(), checkEmail(), checkComment()" onsubmit="return validateForm()">submit</button>
+					<button id="button2" type="reset">reset</button>
+				</form>
+				</div>
+				
+				<!--div with empty opacity-->
+				<div id="topDiv2">
+					<div id="mapDiv">
+						<br/><br/><br/>
+							CONTACT US:<br/><br/>
+							400 McCowan Road<br/>
+							Toronto, Ontario, M1J 1J5<br/>
+							Mon to Fri 10am to 6pm<br/>
+							Tel: 416-333-3439<br/>
+							Email: <u>info@lalaskinessentials.com</u><br/>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!--social media links-->
+				
+				<div id="linkContainer">
+					<a href="https://www.facebook.com/lalaskinessentials" target="_blank"><img id="fbook" src="http://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_(square).png"/></a>
+					<a href="https://twitter.com/lalaskinessents" target="_blank"><img id="twit" src="https://g.twimg.com/Twitter_logo_blue.png"/></a>
+					<a href="https://www.instagram.com/lalaskinessentials/" target="_blank"><img id="ingram" src="Instagram-icon.png"/></a>
+				</div>
+		
+				
+				<!--copyright-->
+				<p id="copyright">&#169 Lala Skin Essentials 2015. All right reserved. </p>
+		</div>
+		
+	<script src="Contact.js"></script>
+	</body>
+</html>

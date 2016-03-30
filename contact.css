@@ -1,0 +1,363 @@
+			body
+			{
+				background-color:beige;
+				background-image:url("https://marciepettitta2.files.wordpress.com/2011/11/backgroun-effect.jpg");
+				background-attachment:fixed;
+				font-family:verdena;
+			}
+			#headerImage
+			{
+				width:200px;
+				height:100px;
+				left:80%;
+				position:absolute;
+			}
+			.holder
+			{
+				width:1120px;
+				height:1300px;
+				background-color: #FFE0C2;
+				border:1px solid lightgrey;
+				position:absolute;
+				
+				margin:auto;
+				top:0px;
+				//bottom:0px; /*or else the top sections won't show up unless zoomed out! */
+				left:0px;
+				right:0px;
+			}
+			#preBox
+			{
+				width:1000px;
+				height:1300px;
+				left:50px;
+				position:absolute;
+				background-color:beige;
+				border-right:10px solid tan;
+				border-left:10px solid tan;
+			}
+			#s1
+			{
+				top:0%; /*it's s right at the top so it's 0%*/
+				height:100px;
+				background-color:#FFFFF0;
+				text-align:center;
+				position:absolute;
+				width:1000px;
+				top:2.4%;
+				z-index:999;
+			}
+			#backImage
+			{
+				position:absolute;
+				width:1000px;
+				height:1200px;
+				top:7.69%;
+			}
+			h1
+			{
+				font-size:3.8em;
+				color:chocolate;
+				font-family:Verdena;
+				padding-left:10px;
+				float:left;
+				top:28%;
+				position:absolute;
+				margin:0px;
+				left:2%;
+				text-align:center;
+			}
+			#topDiv1,#topDiv2
+			{
+				z-index:1;
+				width:500px;
+				height:1200px;
+				background-color:AntiqueWhite; 
+				position:absolute;
+				top:7.69%;
+			}
+			#topDiv1
+			{
+				left:0%;
+				opacity:0.6;
+			}
+			#topDiv2
+			{
+				left:50%;
+				opacity:1;
+			}
+			#header1,#header2
+			{
+				background-color:Cornsilk;
+				top:11.5%;
+				height:70px;
+				width:450px;
+				font-size:2em;
+				position:absolute;
+				text-align:center;
+				font-family:verdena;
+				border-radius:10px;
+				color:indianred;
+				padding-top:25px;
+			}
+			#header1
+			{
+				left:2.5%;
+				margin-top:10px;
+				opacity:1;
+				z-index:2;
+			}
+			#header2
+			{
+				top:12.4%;
+				left:52.5%;
+			}
+			/*css for the actual form*/
+			#container
+			{
+				width:450px;
+				height:900px;
+				position:absolute;
+				background-color:LightGoldenRodYellow;
+				border-radius:10px;
+				left:2.5%;
+				z-index:2;
+				top: 23%; /*(100+200)/1200=16.67%*/
+				
+				transition: background-color 0.2s, border 0.2s;
+				-webkit-transition: background-color 0.2s, border 0.2s;
+				-moz-transition: background-color 0.2s, border 0.2s;
+				-o-transition: background-color 0.2s, border 0.2s;
+			} 
+			#container:hover
+			{
+				background-color:#F8E8CA;
+				border:2px solid brown;
+			}
+			input
+			{
+				width:400px;
+				height:50px;
+				background-color:white;
+				position:absolute;
+				left: 5.55%; 
+				
+				transition: border 0.2s;
+				-webkit-transition: border 0.2s;
+				-moz-transition: border 0.2s;
+				-o-transition: border 0.2s;
+			}
+			input:hover
+			{
+				border:3px solid tan;
+			}
+			
+			textarea
+			{
+				width:400px;
+				left:5.55%;
+				height:200px;
+				resize:none;
+				background-color:white;
+				position:absolute;
+				
+				transition: border 0.2s;
+				-webkit-transition: border 0.2s;
+				-moz-transition: border 0.2s;
+				-o-transition: border 0.2s;
+			}
+			textarea:hover
+			{
+				border:3px solid tan;
+			}
+			button
+			{
+				position:absolute;
+				background-color:#DEB887;
+				color:white;
+				font-weight:bold;
+				font-size:1.5em;
+				font-family:verdena;
+				padding:10px;
+				width:150px;
+				border-radius:50px;
+				box-shadow:1px 1px 4px gray;
+				left:31.25%;
+				
+				transition: background-color 0.2s,color 0.2s;
+				-webkit-transition: background-color 0.2s,color 0.2s;
+				-moz-transition: background-color 0.2s,color 0.2s;
+				-o-transition: background-color 0.2s,color 0.2s;
+			}
+			button:hover
+			{
+				background-color:white;
+				color:#DEB887;
+			}
+			#button1
+			{
+				top: 73.3%/*(250+30+60+4(50)+4(30)/900)*100=73.3%*/
+			}
+			#button2
+			{
+				top: 82%/*(150+250+60+4(50)+6(30)/900)*100=76.67%*/
+			}
+			#linkContainer
+			{
+				width:120px;
+				height:40px;
+				position:absolute;
+				left:44%;
+				background-color:transparent;
+				top:101%;
+			}	
+			#fbook,#twit,#ingram
+			{
+				width:40px;
+				height:40px;
+				position:absolute;
+				/*adding grey filter on hover*/
+				transition: filter 0.5s, cursor 0.5s;
+				-webkit-transition: filter 0.5s, cursor 0.5s;
+				-moz-transition: filter 0.5s, cursor 0.5s;
+				-ms-transition: filter 0.5s, cursor 0.5s;
+			}
+			#fbook:hover,#twit:hover,#ingram:hover
+			{
+				-webkit-filter: grayscale(1);
+				-moz-filter: grayscale(1);
+				-ms-filter: grayscale(1);
+ 				 filter: grayscale(1);
+ 			}
+			#fbook
+			{
+				left:0%;
+			}
+			#twit
+			{
+				left:33%;
+			}
+			#ingram
+			{
+				left:66%;
+			}
+			#s2
+			{
+				z-index:9999;
+				top:0%; /*100/1080*/
+				background-color:chocolate;
+				height:30px;
+				position:absolute;
+				width:1019px;
+				left:4.5%;
+			}
+			/*top links*/
+			ul.top
+			{
+				list-style-type:none;
+				padding:0px;
+				margin:0px;
+				width:102%;
+				position:absolute;
+			}
+			a.top
+			{
+				float:left;
+				display:block;
+				width:118.4px;
+				height: 24px;
+				padding:0.15em 0.3em;
+				text-decoration:none;
+				background-color:chocolate;
+				color:	mistyrose;
+				text-align:center;
+				font-size:0.90em;
+				font-family:Tahoma;
+				font-weight:light;
+			}
+			a.top:hover
+			{
+				background-color:mistyrose;
+				color:chocolate;
+				border:1px solid chocolate;
+				font-weight:light;
+			}
+			li.top
+			{
+				display:inline;
+			}
+			/*top links end*/
+			/*the account and cart*/
+			#personale1,#personale2
+			{
+				position:absolute;
+				left:70%;
+				text-decoration:none;
+				
+				-webkit-transition: border-bottom 0.2s, color 0.2s, cursor 0.2s;
+			}
+			#personale1
+			{
+				top:25%;
+			}
+			#personale2
+			{
+				top:55%;
+			}
+			#personale1:hover,#personale2:hover
+			{
+				border-bottom:2px solid maroon;
+				color:red;
+				cursor:pointer;
+			}
+			#personale1:active,#personale2:active
+			{
+				color:maroon;
+			}
+			b
+			{
+				color:brown;
+			}
+			#copyright
+			{
+				position:absolute;
+				top:105%;
+				font-weight:bold;
+				left:35%;
+				color:brown;
+				z-index:99999999999;
+			}
+			#freeShipping
+			{
+				float:right;
+				color:brown;
+				position:absolute;
+				left:55%
+				width:200px;
+				font-size:1em;
+				-webkit-animation: discountAnimation 8s linear infinite;
+				animation: discountAnimation 8s linear infinite;
+			}
+			@keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px;}
+				25% {color:red; top:20px;}
+				50% {color:indianred; top:40px;}
+				75% {color:brown; top:60px;}
+				100% {color:maroon; top:64px;}
+			}
+			@-webkit-keyframes discountAnimation
+			{
+				0% {color:darksalmon; top:0px;}
+				25% {color:red; top:20px;}
+				50% {color:indianred; top:40px;}
+				75% {color:brown; top:60px;}
+				100% {color:maroon; top:64px;}
+			}
+			#mapDiv
+			{
+				margin-left:20px;
+				left:80%;
+				color:chocolate;
+				font-size:1.3em;
+			}
