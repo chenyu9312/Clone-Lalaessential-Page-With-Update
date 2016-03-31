@@ -28,7 +28,7 @@
 			.holder
 			{
 				width:1120px;
-				height:800px;
+				height:1200px;
 				background-color: #FFE0C2;
 				border:1px solid lightgrey;
 				position:absolute;
@@ -42,7 +42,7 @@
 			#preBox
 			{
 				width:1000px;
-				height:800px;
+				height:1200px;
 				left:50px;
 				position:absolute;
 				background-color:ivory;
@@ -77,7 +77,7 @@
 				height:300px;
 				position:absolute;
 				left:2%; /*0px from the left*/ 
-				top:18.3%; /*110px from the top*/
+				top:13.3%; /*110px from the top*/
 				border:1px solid white;
 			}
 			#description1
@@ -86,7 +86,7 @@
 				font-family:Verdena;
 				color:maroon;
 				width:950px;
-				height:185px;
+				height:380px;
 				padding:5px;
 				position:absolute;
 				opacity:1;
@@ -94,7 +94,7 @@
 				border:1px solid tan;
 				background-color:ivory;
 				left:2%;
-				top:75%; /*gap of 20px between the image and paragraph, total of 420*/
+				top:55%; /*gap of 20px between the image and paragraph, total of 420*/
 				z-index:999;
 				
 			}
@@ -114,7 +114,7 @@
 				left:2%;
 				opacity:1;
 				filter:alpha(opacity=1);
-				top:75%; /*gap of 20px between the image and paragraph, total of 420*/
+				top:55%; /*gap of 20px between the image and paragraph, total of 420*/
 			}
 			#productName
 			{
@@ -125,7 +125,7 @@
 				width:640px;
 				position:absolute;	
 				left: 34%; /*340px from the left*/
-				top:17%;
+				top:13.3%;
 				padding:0px;
 				margin-top:0px;
 			}
@@ -136,7 +136,7 @@
 				border-left:3px solid tan;
 				width:630px;
 				left: 34%;
-				top:23%;
+				top:17%;
 				position:absolute;
 				background-color:ivory;
 			}
@@ -148,7 +148,7 @@
 				width:6em;
 				position:absolute;
 				left:2%;
-				top:70%;
+				top:50%;
 				z-index:999;
 				-webkit-animation: cursor 0.2s;
 				-ms-animation: cursor 0.2s;
@@ -163,7 +163,7 @@
 				width:6em;
 				position:absolute;
 				left:25%;
-				top:70%;
+				top:50%;
 				z-index:999;
 				
 				-webkit-animation: cursor 0.2s;
@@ -179,7 +179,7 @@
 				width:6em;
 				position:absolute;
 				left:48%;
-				top:70%;
+				top:50%;
 				z-index:999;
 				
 				-webkit-animation: cursor 0.2s;
