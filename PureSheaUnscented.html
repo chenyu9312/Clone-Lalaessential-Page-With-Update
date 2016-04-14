@@ -7,6 +7,7 @@
     <title> lala skin essentials pure shea unscented</title>
     <link rel="stylesheet" href="product-stylesheet.css">
     <script src="discounts.js"></script>
+
 </head>
 
 <body onload="hideDiscount()">
@@ -23,15 +24,16 @@
                 <li class="top"><a class="top" href="Contact.html"> Contact</a></li>
                 <li class="top"><a class="top" href="#"> Testimonials</a></li>
             </ul>
-             
+
         </div>
-        
+
         <div id="preBox">
 
             <!--top header with title and logo-->
             <div id="s1">
                 <h1>Pure Shea Unscented</h1>
-                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+                <!--update banner-->
+                <b id="freeShipping"> FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.<br/>SALE!!! Use Promo Code: SAVE25 for 25% off</b>
                 <img id="lalaLogo" src="lalaLogo.png">
             </div>
             <!--end of header-->
@@ -46,8 +48,9 @@
                 skin cracks, psoriasis, dry scalp and scalp irritation.
                 <p> Our Pure Shea Butter is excellent for the Face, Hair and Body!</p>
                 <p> Our products are created with only natural ingredients; free from any chemicals or synthetic ingredients
-                that are harmful and damaging to your skin.<p/>
-                <!--<b>Always Store in a Cool and Dry Place.</b>-->
+                    that are harmful and damaging to your skin.
+                    <p/>
+                    <!--<b>Always Store in a Cool and Dry Place.</b>-->
             </div>
 
             <h2 id="headerIngredients">Ingredients </h2>
@@ -64,14 +67,28 @@
             </div>
 
             <div id="productName">Pure Shea Unscented</div>
-               
+
             <div id="container">
-                <iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>
+                <!--<iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>-->
                 <!--Paypal information-->
                 <!--original button-->
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="CJBAEX3VNBPVQ">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Pure Shea Unscented">
+                    <input type="hidden" name="item_number" value="1">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="shipping" value="5.00">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
                     <table>
                         <tr>
                             <td>
@@ -79,7 +96,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select id="initialProduct" name="os0">
+                                <select name="os0">
                                     <option value="4oz Pure Shea Unscented">4oz Pure Shea Unscented $15.00 CAD</option>
                                     <option value="8oz Pure Shea Unscented">8oz Pure Shea Unscented $30.00 CAD</option>
                                 </select>
@@ -87,27 +104,54 @@
                         </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="CAD">
-                    <input id="payPalImage" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
-                    alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <input type="hidden" name="option_select0" value="4oz Pure Shea Unscented">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Pure Shea Unscented">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+
+
+                    <input class="paypalButton" id="payPalImage" type="submit" value="Add to Cart" name="submit" alt="PayPal - The safer, easier way to pay online!">
                 </form>
+
+
 
 
                 <!--end of original button-->
 
-                <!--discount button-->
+                <!--continue shopping button-->
+                <button class="addButton" id="continueButton">Continue Shopping</button>
+                <!--view cart button-->
+
+                <button calss="addButton" id="shoppingButton">View Cart</button>
+                <!--discount 25 % off button-->
+
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="FGTU6NDRE3NGE">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Pure Shea Unscented - 25% Off">
+                    <input type="hidden" name="item_number" value="1">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="shipping" value="5.00">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+                    <input type="hidden" name="discount_rate" value="25">
                     <table>
                         <tr>
                             <td>
-                                <input type="hidden" name="on0" value="Choose Size:">
-                            </td>
+                                <input type="hidden" name="on0" value="Choose Size:"></td>
                         </tr>
                         <tr>
                             <td>
-                                <select id="discountProduct" name="os0">
+                                <select name="os0">
                                     <option value="4oz Pure Shea Unscented">4oz Pure Shea Unscented $15.00 CAD</option>
                                     <option value="8oz Pure Shea Unscented">8oz Pure Shea Unscented $30.00 CAD</option>
                                 </select>
@@ -115,10 +159,18 @@
                         </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="CAD">
-                    <input id="payPalImageDiscount" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
-                    alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <input type="hidden" name="option_select0" value="4oz Pure Shea Unscented">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Pure Shea Unscented">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+
+
+
+                    <input id="payPalImageDiscount" type="submit" class="paypalButton" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                 </form>
+
+
 
                 <form name="discountForm">
                     <input name="discountFill" id="couponCodeCheck" type="text" name="couponCode" placeholder="Promotion Code" />
@@ -129,7 +181,39 @@
         </div>
     </div>
 
+    <script src="minicart.js"></script>
+
     <script>
+        paypal.minicart.render();
+           paypal.minicart.cart.on('checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 5);
+        			items[i].set('shipping2', 0);
+                   
+        		}
+        	}
+        });
+    //    paypal.minicart.reset();
+    </script>
+
+    <script>
+       
+        /**
+         * chenyu updating
+         */
+        document.getElementById("continueButton").onclick = function(){
+            paypal.minicart.view.hide();
+        }
+        document.getElementById("shoppingButton").onclick = function(){
+            paypal.minicart.view.show();
+        }
+        
+       
         var ingre=document.getElementById("headerIngredients");
 			var desc=document.getElementById("headerDescription");
 			var touse=document.getElementById("headerUse");

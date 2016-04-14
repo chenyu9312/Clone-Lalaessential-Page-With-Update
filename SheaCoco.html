@@ -31,7 +31,8 @@
             <!--top header with title and logo-->
             <div id="s1">
                 <h1>Shea Coco</h1>
-                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+                <!--update banner-->
+                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50<br/>SALE!!! Use Promo Code: SAVE25 for 25% off</b>
                 <img id="lalaLogo" src="lalaLogo.png">
             </div>
             <!--end of header-->
@@ -76,10 +77,10 @@
             <div id="productName">Shea Coco</div>
 
             <div id="container">
-<iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>
+                <!--<iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>-->
                 <!--PayPal-->
                 <!--default button without discount-->
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <!--<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="EDNS7HMP3LGZU">
                     <table>
@@ -100,11 +101,11 @@
                     <input id="payPalImage" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
                     alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
+                </form>-->
                 <!--default button without discount ends-->
 
                 <!--button with discount-->
-                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <!--<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="J5Q73HD7NRM6E">
                     <table>
@@ -115,7 +116,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select id="discountProduct" name="os0">
+                               <select id="discountProduct" name="os0">
                                     <option value="4oz Shea Coco">4oz Shea Coco $15.00 CAD</option>
                                     <option value="8oz Shea Coco">8oz Shea Coco $30.00 CAD</option>
                                 </select>
@@ -126,20 +127,134 @@
                     <input id="payPalImageDiscount" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
                     alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
+                </form>-->
                 <!--discount button ends-->
+
+                <!--new origin button-->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Shea Coco">
+                    <input type="hidden" name="item_number" value="1">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="rm" value="1">
+                    <input type="hidden" name="return" value="">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Choose Size:">Choose Size:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="os0">
+                                    <option value="4oz Shea Coco">4oz Shea Coco $15.00 CAD</option>
+                                    <option value="8oz Shea Coco">8oz Shea Coco $30.00 CAD</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="option_select0" value="4oz Shea Coco">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Shea Coco">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+
+                    <input class="paypalButton" id="payPalImage" type="submit" value="Add to Cart" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+                </form>
+
+                <!--new discount button with ship tax in profile setting-->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Shea Coco - 25% Off">
+                    <input type="hidden" name="item_number" value="2">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+                    <input type="hidden" name="discount_rate" value="25">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on0" value="Choose Size:"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="os0">
+                                    <option value="4oz Shea Coco">4oz Shea Coco $15.00 CAD</option>
+                                    <option value="8oz Shea Coco">8oz Shea Coco $30.00 CAD</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="option_select0" value="4oz Shea Coco">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Shea Coco">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+                    <input id="payPalImageDiscount" type="submit" class="paypalButton" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+               
 
                 <form name="discountForm">
                     <input name="discountFill" id="couponCodeCheck" type="text" name="couponCode" placeholder="Promotion Code" />
                     <input type="button" id="couponCodeCheckButton" value="Apply" onclick="applyCoupon()" />
                 </form>
+                 <!--continue shopping button-->
+                <button id="continueButton">Continue Shopping</button>
+                <!--view cart button-->
+                <button id="shoppingButton">View Cart</button>
 
             </div>
 
         </div>
     </div>
 
+    <script src="minicart.js"></script>
+
     <script>
+        paypal.minicart.render();
+           paypal.minicart.cart.on('checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 5);
+        			items[i].set('shipping2', 0);
+                    
+        		}
+        	}
+        });
+        // paypal.minicart.reset();
+    </script>
+    <script>
+        document.getElementById("continueButton").onclick = function(){
+            paypal.minicart.view.hide();
+        }
+        document.getElementById("shoppingButton").onclick = function(){
+            paypal.minicart.view.show();
+        }
+        
         var ingre=document.getElementById("headerIngredients");
 			var desc=document.getElementById("headerDescription");
 			var touse=document.getElementById("headerUse");

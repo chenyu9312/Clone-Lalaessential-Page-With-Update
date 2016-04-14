@@ -30,7 +30,7 @@
             <!--top header with title and logo-->
             <div id="s1">
                 <h1>Shea Berry</h1>
-                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50<br/>SALE!!! Use Promo Code: SAVE25 for 25% off</b>
                 <img id="lalaLogo" src="lalaLogo.png">
             </div>
             <!--end of header-->
@@ -39,7 +39,7 @@
 
             <h2 id="headerDescription">Description </h2>
             <div id="description1">
-                
+
                 <p>
                     Shea Berry is luxurious moisturizer that will leave your skin soft and glowing with a youthful radiance. Contains Organic
                     Shea Butter and fresh Strawberry extracts for an invigorating scent and feel throughout the day.
@@ -47,7 +47,8 @@
                 <p>This Premium Organic Body Butter is:</p>
                 <ul>
                     <li>Rejuvenating and Restoring – Contains nature’s best ingredients to soothe, nourish and replenish the
-                        skin</li>
+                        skin
+                    </li>
                     <li>Healing – Improves the appearance of scars, stretch marks, wrinkles, dark spots, blemishes and accelerates
                         wound and burn healing</li>
                     <li>Ultra-Hydrating – Nourishing formula that will leave your skin glowing with youthful radiance</li>
@@ -73,12 +74,24 @@
             <div id="productName">Shea Berry</div>
 
             <div id="container">
-<iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>
+                <!--<iframe scrolling="no" frameborder="0" id="viewCart" src="viewButton.html"></iframe>-->
                 <!-- PayPal starts-->
                 <!--default product-->
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="GT7GRCEF4GSDY">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Shea Berry">
+                    <input type="hidden" name="item_number" value="9">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="shipping" value="5.00">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
                     <table>
                         <tr>
                             <td>
@@ -86,7 +99,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select id="initialProduct" name="os0">
+                                <select name="os0">
                                     <option value="4oz Shea Berry">4oz Shea Berry $15.00 CAD</option>
                                     <option value="8oz Shea Berry">8oz Shea Berry $30.00 CAD</option>
                                 </select>
@@ -94,25 +107,43 @@
                         </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="CAD">
-                    <input id="payPalImage" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
-                    alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    <input type="hidden" name="option_select0" value="4oz Shea Berry">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Shea Berry">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+                     <input class="paypalButton" id="payPalImage" type="submit" value="Add to Cart" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
                 </form>
+
                 <!--end of default product-->
 
                 <!--discount product-->
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="268SN7SE4QMVW">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Shea Berry - 25% Off">
+                    <input type="hidden" name="item_number" value="9">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="shipping" value="5.00">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+                    <input type="hidden" name="discount_rate" value="25">
+                    <input type="hidden" name="tax_rate" value="13">
                     <table>
                         <tr>
                             <td>
-                                <input type="hidden" name="on0" value="Choose Size:">
-                            </td>
+                                <input type="hidden" name="on0" value="Choose Size:"></td>
                         </tr>
                         <tr>
                             <td>
-                                <select id="discountProduct" name="os0">
+                                <select name="os0">
                                     <option value="4oz Shea Berry">4oz Shea Berry $15.00 CAD</option>
                                     <option value="8oz Shea Berry">8oz Shea Berry $30.00 CAD</option>
                                 </select>
@@ -120,10 +151,17 @@
                         </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="CAD">
-                    <input id="payPalImageDiscount" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit"
-                    alt="PayPal - The safer, easier way to pay online!">
+                    <input type="hidden" name="option_select0" value="4oz Shea Berry">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_select1" value="8oz Shea Berry">
+                    <input type="hidden" name="option_amount1" value="30.00">
+                    <input type="hidden" name="option_index" value="0">
+                     <input id="payPalImageDiscount" type="submit" class="paypalButton" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </form>
+
+
+
 
                 <form name="discountForm">
                     <input name="discountFill" id="couponCodeCheck" type="text" name="couponCode" placeholder="Promotion Code" />
@@ -133,13 +171,42 @@
 
 
 
+  <!--continue shopping button-->
+                <button id="continueButton">Continue Shopping</button>
+                <!--view cart button-->
+                <button id="shoppingButton">View Cart</button>
 
             </div>
 
         </div>
     </div>
 
+    <script src="minicart.js"></script>
+
     <script>
+        paypal.minicart.render();
+           paypal.minicart.cart.on('checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) {
+        			items[i].set('shipping', 5);
+        			items[i].set('shipping2', 0);
+                    
+        		}
+        	}
+        });
+        // paypal.minicart.reset();
+    </script>
+    <script>
+        document.getElementById("continueButton").onclick = function(){
+            paypal.minicart.view.hide();
+        }
+        document.getElementById("shoppingButton").onclick = function(){
+            paypal.minicart.view.show();
+        }
         var ingre=document.getElementById("headerIngredients");
 			var desc=document.getElementById("headerDescription");
 			var touse=document.getElementById("headerUse");

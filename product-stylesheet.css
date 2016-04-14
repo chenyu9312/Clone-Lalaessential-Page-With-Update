@@ -52,7 +52,7 @@
 			#s1
 			{
 				top:0%; /*it's s right at the top so it's 0%*/
-				height:99px;
+				height:120px;
 				border-bottom:1px solid chocolate;
 				background-color:#FFFFF0;
 				text-align:center;
@@ -260,10 +260,25 @@
 				position:absolute;
 				width:125px;
 				height:25px;
-				top:67%;
+				top:62%;
 				left:5%;
+                
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: 0;
+                cursor: pointer;
+                outline: none;
+                display: inline-center;
+                
 			}
-			
+            .paypalButton:hover{background: #e05c04;}
+			.addButton:hover{background:#e05c04;}
 			#payPalImageDiscount
 			{
 				display:none;
@@ -272,7 +287,7 @@
 			{
 				display:none;
 			}
-            /*chenyu*/
+            /*chenyu update*/
             #viewCart
             {
                 position: absolute;
@@ -282,6 +297,49 @@
                 left: 25%;
                 background:transparent;
                 
+            }
+            
+            #continueButton{
+                position: absolute;
+                width:160px;
+                height: 25px;
+                top:62%;
+                left: 25%;
+                
+                
+                
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                display: inline-block;
+            }
+            #shoppingButton{
+                position: absolute;
+                width:120px;
+                height: 25px;
+                top:62%;
+                left: 50%;
+                
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: 0;
+                cursor: pointer;
+                outline: none;
+                display: inline-block;
             }
             
 			
@@ -399,14 +457,15 @@
 				font-size:1em;
 				-webkit-animation: discountAnimation 8s linear infinite;
 				animation: discountAnimation 8s linear infinite;
+                
 			}
 			@keyframes discountAnimation
 			{
 				0% {color:darksalmon; top:0px;}
-				25% {color:red; top:20px;}
-				65% {color:indianred; top:40px;}
-				75% {color:brown; top:50px;}
-				100% {color:maroon; top:55px;}
+				25% {color:red; top:10px;}
+				65% {color:indianred; top:20px;}
+				75% {color:brown; top:35px;}
+				100% {color:maroon; top:45px;}
 			}
 			@-webkit-keyframes discountAnimation
 			{

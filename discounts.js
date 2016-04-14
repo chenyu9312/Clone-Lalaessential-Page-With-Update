@@ -13,8 +13,9 @@ function hideDiscount()
 	
 function applyCoupon()
 {
+    //change discount to 25 percent off
 	x=document.getElementById("couponCodeCheck").value;
-	if(x=="SAVE10"||x=="save10")
+	if(x=="SAVE25"||x=="save25")
 	{
 		document.getElementById("payPalImageDiscount").style.display="block";
 		//document.getElementById("discountTable").style.display="block";
