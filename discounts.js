@@ -7,7 +7,8 @@ function hideDiscount()
 		//document.getElementById("discountTable").style.zIndex=-999;
 		
 		//this is showing the select for the normal price
-		document.getElementById("discountProduct").style.display="none";		
+		document.getElementById("discountProduct").style.display="none";	
+		//document.getElementById()	
 		
 }
 	

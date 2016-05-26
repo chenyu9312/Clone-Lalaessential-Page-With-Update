@@ -7,9 +7,11 @@
     <title> Lala Skin essentials Hair Moisturizing and
         <br/>Growth Butter</title>
     <link rel="stylesheet" href="product-stylesheet.css">
+    <script src="discounts.js"></script>
+    <script src="minicart.js"></script>
 </head>
 
-<body>
+<body onload="hideDiscount()">
     <div class="holder">
         <div id="s2">
             <!--main links at the top-->
@@ -30,7 +32,7 @@
             <!--top header with title and logo-->
             <div id="s1">
                 <h1 style="font-size:2.8em;">Tea Tree Facial Cleanser</h1>
-                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50.</b>
+                <b id="freeShipping">FREE Canadian shipping on orders over $75. <br/> $5 flat rate shipping on orders over $50<br/>SALE!!! Use Promo Code: SAVE25 for 25% off</b>
                 <img id="lalaLogo" src="lalaLogo.png">
             </div>
             <!--end of header-->
@@ -84,7 +86,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select name="os0">
+                                <select id="initialProduct" name="os0">
                                     <option value="150mL">150mL $15.00 CAD</option>
                                 </select>
                             </td>
@@ -104,6 +106,47 @@
                 <!--view cart button-->
                 <button id="shoppingButton">View Cart</button>
 
+                <!--discount form-->
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="business" value="lalaskinessentials@gmail.com">
+                    <input type="hidden" name="lc" value="CA">
+                    <input type="hidden" name="item_name" value="Tea Tree Facial Cleanser-25%off">
+                    <input type="hidden" name="button_subtype" value="products">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="cn" value="Add special instructions to the seller:">
+                    <input type="hidden" name="no_shipping" value="2">
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="tax_rate" value="13.000">
+                    <input type="hidden" name="add" value="1">
+                    <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+                    <input type="hidden" name="discount_rate" value="25">
+                    <table>
+                        <tr>
+                            <td><input type="hidden" name="on0" value="Choose Size:"></td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <select id="dicountProduct" name="os0">
+                                    <option value="150mL">150mL $15.00 CAD</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="CAD">
+                    <input type="hidden" name="option_select0" value="150mL">
+                    <input type="hidden" name="option_amount0" value="15.00">
+                    <input type="hidden" name="option_index" value="0">
+
+
+
+                    <input class="paypalButton" id="payPalImageDiscount" type="submit" value="Add to Cart" name="submit" alt="PayPal - The safer, easier way to pay online!">
+
+                </form>
+                <form name="discountForm">
+                    <input name="discountFill" id="couponCodeCheck" type="text" name="couponCode" placeholder="Promotion Code" />
+                    <input type="button" id="couponCodeCheckButton" value="Apply" onclick="applyCoupon()" />
+                </form>
             </div>
 
         </div>

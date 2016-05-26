@@ -35,7 +35,7 @@
 				
 				margin:auto;
 				top:0px;
-				//bottom:0px; /*or else the top sections won't show up unless zoomed out! */
+				/*bottom:0px; /*or else the top sections won't show up unless zoomed out! */
 				left:0px;
 				right:0px;
 			}
@@ -260,7 +260,7 @@
 				position:absolute;
 				width:125px;
 				height:25px;
-				top:62%;
+				top:64%;
 				left:5%;
                 
                 font-family: inherit;

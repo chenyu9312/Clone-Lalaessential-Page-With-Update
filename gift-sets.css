@@ -4,6 +4,7 @@
 				background-image:url("https://marciepettitta2.files.wordpress.com/2011/11/backgroun-effect.jpg");
 				font-family:verdena;
 			}
+           
 			#lalaLogo
 			{
 				height:54px;
@@ -52,7 +53,7 @@
 			#s1
 			{
 				top:0%; /*it's s right at the top so it's 0%*/
-				height:99px;
+				height:119px;
 				border-bottom:1px solid chocolate;
 				background-color:#FFFFF0;
 				text-align:center;
@@ -140,6 +141,72 @@
 				position:absolute;
 				background-color:ivory;
 			}
+            
+            .paypalButton:hover{background: #e05c04;}
+			.addButton:hover{background:#e05c04;}
+             #continueButton{
+                position: absolute;
+                width:160px;
+                height: 25px;
+                top:64%;
+                left: 25%;
+                
+                
+                
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                display: inline-block;
+            }
+            #payPalImage
+			{
+				position:absolute;
+				width:125px;
+				height:25px;
+				top:64%;
+				left:5%;
+                
+                 font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: 0;
+                cursor: pointer;
+                outline: none;
+                display: inline-center;
+			}
+            #shoppingButton{
+                position: absolute;
+                width:120px;
+                height: 25px;
+                top:64%;
+                left: 50%;
+                
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                padding:10px 14px;
+                margin: 4px 2px;
+                background: #ff6600;
+                border: 0;
+                cursor: pointer;
+                outline: none;
+                display: inline-center;
+            }
 			#headerDescription
 			{
 				color:coral;
@@ -224,14 +291,7 @@
 			{
 				left:56%;
 			}
-			#payPalImage
-			{
-				position:absolute;
-				width:125px;
-				height:25px;
-				top:24%;
-				left:55%;
-			}
+			
 			/*top links*/
 			ul.top
 			{

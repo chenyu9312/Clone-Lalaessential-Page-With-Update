@@ -154,7 +154,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select name="os0">
+                                <select id="initialProduct" name="os0">
                                     <option value="4oz Shea Coco">4oz Shea Coco $15.00 CAD</option>
                                     <option value="8oz Shea Coco">8oz Shea Coco $30.00 CAD</option>
                                 </select>
@@ -195,7 +195,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <select name="os0">
+                                <select id="discountProduct" name="os0">
                                     <option value="4oz Shea Coco">4oz Shea Coco $15.00 CAD</option>
                                     <option value="8oz Shea Coco">8oz Shea Coco $30.00 CAD</option>
                                 </select>
@@ -231,21 +231,8 @@
     <script src="minicart.js"></script>
 
     <script>
-        paypal.minicart.render();
-           paypal.minicart.cart.on('checkout', function (evt) {
-        	var items, len, i;
-
-        	if (this.subtotal() > 0) {
-        		items = this.items();
-
-        		for (i = 0, len = items.length; i < len; i++) {
-        			items[i].set('shipping', 5);
-        			items[i].set('shipping2', 0);
-                    
-        		}
-        	}
-        });
-        // paypal.minicart.reset();
+        paypal.minicart.render();          
+         paypal.minicart.reset();
     </script>
     <script>
         document.getElementById("continueButton").onclick = function(){
